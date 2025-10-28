@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kuryer Buyurtma Tizimi</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 20px;
+    }
+    h1 {
+      text-align: center;
+      color: #2b2b2b;
+    }
+    form {
+      background: white;
+      max-width: 400px;
+      margin: 30px auto;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    input, textarea, button {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    button {
+      background-color: #007bff;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <h1>Kuryer Buyurtma Qabul Tizimi</h1>
+  <form>
+    <label for="name">Ism Familiya:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="phone">Telefon raqam:</label>
+    <input type="tel" id="phone" name="phone" placeholder="+998901234567" required>
+
+    <label for="address">Manzil:</label>
+    <textarea id="address" name="address" rows="3" required></textarea>
+
+    <label for="package">Buyurtma tafsilotlari:</label>
+    <textarea id="package" name="package" rows="3" required></textarea>
+
+    <button type="submit">Buyurtmani yuborish</button>
+  </form>
+</body>
+</html>
